@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloGuestScreen - Weekly Webinar</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to match branding and enhance design */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light background */
+            color: #333;
+        }
+        .brand-color-primary {
+            background-color: #007bff; /* Example primary brand color, adjust based on helloguestscreen.com */
+        }
+        .brand-text-primary {
+            color: #007bff;
+        }
+        .brand-border-primary {
+            border-color: #007bff;
+        }
+        .brand-button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .brand-button:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+        .section-heading {
+            font-size: 2.5rem; /* H1 size */
+            font-weight: 700;
+            color: #212529; /* Darker text for headings */
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center rounded-b-lg">
+        <!-- Logo - Replace with your actual logo -->
+        <!-- <div class="flex items-center">
+            <img src="https://placehold.co/60x60/007bff/ffffff?text=LOGO" alt="Company Logo" class="h-12 w-12 rounded-full mr-3">
+            <span class="text-2xl font-bold brand-text-primary">HelloGuestScreen</span>
+        </div> -->
+        <div class="flex items-center">
+            <img src="https://placehold.co/60x60/007bff/ffffff?text=HGS" alt="Company Logo" class="h-12 w-12 rounded-full mr-3">
+            <span class="text-2xl font-bold brand-text-primary">HelloGuestScreen</span>
+        </div>
+        <!-- Navigation - Optional, but good practice for a full page -->
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Home</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Webinars</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="brand-color-primary text-white py-20 px-6 md:px-12 text-center rounded-lg m-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Unlock the Future of Guest Experience
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                Join our weekly webinar series to discover innovative solutions for seamless guest management and enhanced satisfaction.
+            </p>
+            <a href="#registration" class="brand-button inline-block text-lg px-8 py-4 rounded-full shadow-lg hover:scale-105 transform transition-transform duration-300">
+                Register for Free Webinar
+            </a>
+        </div>
+    </section>
+
+    <!-- Webinar Topics Overview Section -->
+    <section class="py-16 px-6 md:px-12 bg-white m-4 rounded-lg shadow-md">
+        <h2 class="section-heading">What You'll Learn</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Topic Card 1 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/50x50/e0e0e0/333333?text=💡" alt="Icon" class="mr-4 rounded-full">
+                    <h3 class="text-xl font-semibold text-gray-800">Streamlined Check-ins</h3>
+                </div>
+                <p class="text-gray-600">Discover how to automate and simplify your guest check-in process, reducing wait times and improving efficiency.</p>
+            </div>
+            <!-- Topic Card 2 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/50x50/e0e0e0/333333?text=💬" alt="Icon" class="mr-4 rounded-full">
+                    <h3 class="text-xl font-semibold text-gray-800">Personalized Guest Communication</h3>
+                </div>
+                <p class="text-gray-600">Learn strategies for effective communication that enhances guest satisfaction and builds lasting relationships.</p>
+            </div>
+            <!-- Topic Card 3 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/50x50/e0e0e0/333333?text=📊" alt="Icon" class="mr-4 rounded-full">
+                    <h3 class="text-xl font-semibold text-gray-800">Data-Driven Insights</h3>
+                </div>
+                <p class="text-gray-600">Utilize analytics to understand guest behavior and optimize your services for maximum impact.</p>
+            </div>
+            <!-- Topic Card 4 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/50x50/e0e0e0/333333?text=🔒" alt="Icon" class="mr-4 rounded-full">
+                    <h3 class="text-xl font-semibold text-gray-800">Enhanced Security Protocols</h3>
+                </div>
+                <p class="text-gray-600">Implement robust security measures to ensure a safe and secure environment for all your guests.</p>
+            </div>
+            <!-- Topic Card 5 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/50x50/e0e0e0/333333?text=🌐" alt="Icon" class="mr-4 rounded-full">
+                    <h3 class="text-xl font-semibold text-gray-800">Seamless Integrations</h3>
+                </div>
+                <p class="text-gray-600">Explore how our solutions integrate with your existing systems for a cohesive operational flow.</p>
+            </div>
+            <!-- Topic Card 6 -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <img src="https://placehold.co/50x50/e0e0e0/333333?text=🌟" alt="Icon" class="mr-4 rounded-full">
+                    <h3 class="text-xl font-semibold text-gray-800">Future Trends in Hospitality</h3>
+                </div>
+                <p class="text-gray-600">Stay ahead of the curve with insights into emerging trends shaping the future of the hospitality industry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaker Profiles Section -->
+    <section class="py-16 px-6 md:px-12 bg-gray-100 m-4 rounded-lg shadow-md">
+        <h2 class="section-heading">Meet Our Expert Speakers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- Speaker 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+                <img src="https://placehold.co/150x150/007bff/ffffff?text=Speaker+1" alt="Speaker 1 Photo" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 brand-border-primary">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Jane Doe</h3>
+                <p class="text-md brand-text-primary mb-3">CEO, Innovate Solutions</p>
+                <p class="text-gray-600 text-sm">Jane is a visionary leader with over 20 years of experience in hospitality tech, driving innovation and guest-centric strategies.</p>
+            </div>
+            <!-- Speaker 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+                <img src="https://placehold.co/150x150/007bff/ffffff?text=Speaker+2" alt="Speaker 2 Photo" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 brand-border-primary">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">John Smith</h3>
+                <p class="text-md brand-text-primary mb-3">Lead Product Manager, HelloGuestScreen</p>
+                <p class="text-gray-600 text-sm">John specializes in crafting intuitive user experiences and has been instrumental in developing our core guest management platform.</p>
+            </div>
+            <!-- Speaker 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow duration-300">
+                <img src="https://placehold.co/150x150/007bff/ffffff?text=Speaker+3" alt="Speaker 3 Photo" class="w-36 h-36 rounded-full mx-auto mb-4 object-cover border-4 brand-border-primary">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Emily White</h3>
+                <p class="text-md brand-text-primary mb-3">Head of Customer Success, Global Hospitality</p>
+                <p class="text-gray-600 text-sm">Emily is passionate about empowering businesses to achieve exceptional guest satisfaction through strategic implementation and support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="registration" class="py-16 px-6 md:px-12 bg-white m-4 rounded-lg shadow-md">
+        <h2 class="section-heading">Register for the Webinar</h2>
+        <div class="max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+            <p class="text-center text-gray-700 mb-6 text-lg">Don't miss out! Fill out the form below to secure your spot.</p>
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Full Name"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="company" class="block text-gray-700 text-sm font-medium mb-2">Company (Optional)</label>
+                    <input type="text" id="company" name="company" placeholder="Your Company Name"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="role" class="block text-gray-700 text-sm font-medium mb-2">Your Role (Optional)</label>
+                    <input type="text" id="role" name="role" placeholder="e.g., Hotel Manager, CEO"
+                           class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div class="flex items-center">
+                    <input type="checkbox" id="newsletter" name="newsletter" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <label for="newsletter" class="ml-2 block text-sm text-gray-900">
+                        Subscribe to our newsletter for future updates.
+                    </label>
+                </div>
+                <button type="submit" class="brand-button w-full py-3 text-lg rounded-md shadow-md hover:scale-105 transform transition-transform duration-300">
+                    Submit Registration
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 text-center rounded-t-lg mt-4">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm mb-4">&copy; 2025 HelloGuestScreen. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                <!-- Social Media Icons - Add actual links and icons -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
